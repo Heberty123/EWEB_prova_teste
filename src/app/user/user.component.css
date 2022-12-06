@@ -1,0 +1,46 @@
+.box-user{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-table{
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.subtitle{
+    font-size: 1.3rem;
+    margin: 0px 0px 10px 0px
+}
+
+table{
+    width: 100%;
+}
+
+.box-table{
+    background-color: aquamarine;
+}
+
+.table-head{
+    background-color: cadetblue;
+}
+
+.col-id{
+    width: 5%;
+}
+
+.col-name{
+    width: 40%;
+}
+
+.col-username{
+    width: 10%;
+}
+
+.col-email{
+    width: 45%;
+}

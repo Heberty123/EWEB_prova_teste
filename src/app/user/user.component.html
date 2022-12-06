@@ -1,19 +1,21 @@
-<p>user works!</p>
+<div class="box-user">
+    <div class="box-table">
+        <p class="subtitle">total users: {{users.length}}</p>
 
-<p>total users: {{users.length}}</p>
+        <table>
+            <tr class="table-head">
+                <td class="col-id">Id</td>
+                <td class="col-name">Name</td>
+                <td class="col-username">Username</td>
+                <td class="col-email">Email</td>
+            </tr>
+            <tr *ngFor="let user of users">
+                <td class="col-id">{{user.id}}</td>
+                <td class="col-name">{{user.name}}</td>
+                <td class="col-username">{{user.username}}</td>
+                <td class="col-email">{{user.email}}</td>
+            </tr>
 
-<table>
-    <tr>
-        <td>Id</td>
-        <td>Name</td>
-        <td>Username</td>
-        <td>Email</td>
-    </tr>
-    <tr *ngFor="let user of users">
-        <td>{{user.id}}</td>
-        <td>{{user.name}}</td>
-        <td>{{user.username}}</td>
-        <td>{{user.email}}</td>
-    </tr>
-
-</table>
+        </table>
+    </div>
+</div>
