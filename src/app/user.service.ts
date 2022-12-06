@@ -12,7 +12,7 @@ export class UserService {
 
   constructor(private http:HttpClient) { }
 
-  getUser(): Observable<User> {
-    return this.http.get<User>(this.UserUrl);
+  getUser(): Observable<User[]> {
+    return this.http.get<User[]>(this.UserUrl);
   }
 }
